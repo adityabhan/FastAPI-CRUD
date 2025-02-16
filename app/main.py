@@ -126,7 +126,7 @@ def update_department_by_id(
 
 
 @app.get("/department/{department_id}", response_model=Department)
-def get_department(department_id: int, session: Session = Depends(get_session)):
+def get_department_by_id(department_id: int, session: Session = Depends(get_session)):
     """
     Get a Department using department id.
     """
