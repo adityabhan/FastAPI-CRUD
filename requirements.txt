@@ -1,5 +1,7 @@
-fastapi
+fastapi[all]
 uvicorn
 sqlmodel
 pydantic[email]
 email-validator
+httpx
+pytest

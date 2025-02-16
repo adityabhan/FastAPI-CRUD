@@ -15,11 +15,20 @@ Todo → Person	Many-to-Many (via TodoMapping)
 
 # Build and run backend
 
-docker build -t fast_api:1.0 .
+> docker build -t fast_api:1.0 .
 
-docker run -it -p 8000:8000 fast_api:1.0
+> docker run -it -p 8000:8000 fast_api:1.0
 
 Go to http://localhost:8000/docs to access Swagger Documentation.
 
-Open Points:
+To run tests:
+
+> pytest
+
+## Tips
+
+1) For testing make sure to make tests and app as a package.
+2)  Include /app in the sys path.
+
+## Open Points:
 1) email validator for Person is not working as expected.
